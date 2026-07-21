@@ -269,7 +269,7 @@
     const invoice = document.getElementById('invoicePreview');
     html2canvas(invoice, { scale: 2 }).then(canvas => {
       const link = document.createElement('a');
-      link.download = `ProDentalCare_Invoice_${document.getElementById('invoiceNumber').value || '000'}.jpg`;
+      link.download = `MahavirDentalClinic_Invoice_${document.getElementById('invoiceNumber').value || '000'}.jpg`;
       link.href = canvas.toDataURL('image/jpeg');
       link.click();
     });
@@ -279,7 +279,7 @@
     const invoice = document.getElementById('invoicePreview');
     html2canvas(invoice, { scale: 4, letterRendering: true }).then(canvas => {
       const link = document.createElement('a');
-      link.download = `ProDentalCare_Invoice_${document.getElementById('invoiceNumber').value || '000'}.png`;
+      link.download = `MahavirDentalClinic_Invoice_${document.getElementById('invoiceNumber').value || '000'}.png`;
       link.href = canvas.toDataURL('image/png');
       link.click();
     });
